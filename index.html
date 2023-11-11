@@ -6,24 +6,26 @@
     <title>Compue$tapp</title>
 </head>
 <body>
-    <header><h1 id="titulo_app">Calculadora de Interes compuesto</h1></header>
-    <div>
-        <h3>Monto Inicial</h3>
-        <input type="text" id="imputMontoInicial" class="form-control" placeholder="Ingrese monto" 
-        aria-label="Username" aria-describedby="basic-addon1"><br>
-        <h3>Periodos</h3>
-        <input type="text" class="form-control" placeholder="Ingrese cantidad de periodos" 
-        aria-label="Username" aria-describedby="basic-addon1"><br>
-        <h3>Tasa de interes por periodo</h3>
-        <input type="text" class="form-control" placeholder="Interes por periodo "
-         aria-label="Username" aria-describedby="basic-addon1"> % <br>
-         <h3>Intereses Obtenidos</h3>
-         <input type="text" class="form-control" placeholder="" 
-         aria-label="Username" aria-describedby="basic-addon1">
-         <h3>Monto Final</h3>
-         <input type="text" class="form-control" placeholder="" 
-         aria-label="Username" aria-describedby="basic-addon1">
-         
+ 
+
+
+          <h1>Calculadora de Interés Compuesto</h1>
+
+          <label for="capital">Capital:</label>
+          <input type="number" id="capital" placeholder="Ingrese el capital"><br>
+      <br>
+          <label for="tasaInteres">Tasa de interés (%):</label>
+          <input type="number" id="imputTasaPeriodo" placeholder="Ingrese la tasa de interés"><br>
+      <br>
+          <label for="periodos">Número de periodos:</label>
+          <input type="number" id="imputCantPeriodos" placeholder="Ingrese el número de periodos"><br>
+      <br>
+          <button onclick="calcularInteresCompuesto()">Calcular</button>
+      
+          <h2>Resultado:</h2><br>
+          
+          <p id="intereses"></p><br>
+          <p id="montoFinal"></p>
 
 
     </div>
