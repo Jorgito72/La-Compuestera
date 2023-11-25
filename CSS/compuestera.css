@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(146, 233, 233);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column; /* Cambio la dirección del flex a columna */
+  }
+  
+  .container {
+    
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    background-color: #9eb0e9; /* Color de fondo verde agua */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    display: block;
+    color: #333;
+    margin-top: 0; /* Elimino el margen superior del h1 */
+    margin-bottom: 40px; /* Espacio inferior entre el título y los elementos siguientes */
+    margin-left: 22px; /* Agregado margen izquierdo de 22px */
+    font-size: 50px;
+   font-weight: bold;
+  
+   letter-spacing: 1px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 6px;
+    margin-left: 10px; /* Margen a la izquierda para los labels */
+  }
+  
+  input {
+    width: calc(100% - 22px); /* Considerando el margen izquierdo de 10px */
+    height: 60px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: 10px; /* Margen a la izquierda para los inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 30px; /* Tamaño de texto incrementado */
+  }
+  /* Ajuste para dispositivos móviles */
+@media screen and (max-width: 480px) {
+    input {
+      width: 100%; /* En dispositivos móviles, los inputs ocuparán el 100% */
+    }
+  }
+  
+  
+  button {
+    width: 150px;
+    height: 60px;
+    background-color: #3a728b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 30px;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.4); /* Agregada sombra hacia la derecha */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  h2 {
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 35px; /* Tamaño de texto incrementado */
+  }
+  
